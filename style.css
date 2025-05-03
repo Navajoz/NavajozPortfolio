@@ -1,0 +1,263 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: rgba(255, 255, 255, 0.7);
+    --border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--white);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Navigation */
+.navigation {
+    margin: 3rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.navigation a {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 6rem 0;
+    border-bottom: var(--border);
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Project Header */
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-header h3 {
+    margin: 0;
+    transition: opacity 0.2s ease;
+}
+
+.project-header a:hover h3 {
+    opacity: 0.8;
+}
+
+.github-link {
+    display: inline-flex;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.github-link:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.github-link svg {
+    display: block;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-media {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.project-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-media:hover img {
+    transform: scale(1.03);
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background-color: rgb(20, 20, 20);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.project-tags span:hover {
+    background-color: rgb(30, 30, 30);
+    transform: translateY(-1px);
+}
+
+.project-tags span {
+    display: inline-block;
+    margin-right: 0.75rem;
+    opacity: 0.7;
+}
+
+/* About Section */
+.about-section {
+    padding: 6rem 0;
+    border-bottom: var(--border);
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+mark {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0 0.2em;
+}
+
+.code-block {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-media {
+        order: -1;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navajoz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Gustavo Navarro Marques</h1>
+            <h2>Desenvolvedor Web/Frontend</h2>
+            <nav class="navigation">
+                <a href="#projects">Projetos</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projects" class="projects-section">
+                <h2 class="section-title">Projetos</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <img src="images/project1.gif" alt="HTTPeepo Demonstration" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <a href="https://httpeepo.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <h3>HTTPeepo</h3>
+                                </a>
+                                <a href="https://github.com/Navajoz/HTTPeepo" target="_blank" rel="noopener noreferrer" class="github-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p>Inspirado pelo site HTTP Cats, HTTPeepo foi feito para explicar e exemplificar respostas do protocolo html, usando emotes da Twitch/7tv</p>
+                            <p class="project-tags">
+                                <span>React</span>
+                                <span>Tailwindcss</span>
+                                <span>Supabase (PostgreSQL)</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <img src="images/project2.png" alt="Ratedle Demonstration" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <a href="https://ratedle.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <h3>Ratedle</h3>
+                                </a>
+                                <a href="https://github.com/Navajoz/Ratedle" target="_blank" rel="noopener noreferrer" class="github-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p>Jogo de browser onde o jogador adivinha a avaliação de jogos, possui banco de dados com 100 jogos e rank global, inspirado por jogos como Gamedle, Termo e Musicle</p>
+                            <p class="project-tags">
+                                <span>React/Vite</span>
+                                <span>PostgreSQL</span>
+                            </p>
+                        </div>
+                    </article>
+                    <!-- Project 3 with GIF -->
+                    <article class="project">
+                        <div class="project-media">
+                            <img src="images/project3.gif" alt="MeowMeow Demonstration" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <a href="https://meow-meow-five.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <h3>MeowMeow</h3>
+                                </a>
+                            </div>
+                            <p>Prototipo de aplicativo de mensagens, possui sistema auth basico e chat global, além da possibilidade de criar chats privados com os usuarios</p>
+                            <p class="project-tags">
+                                <span>React</span>
+                                <span>FirebaseAuth</span>
+                                <span>Banco de dados em tempo real</span>
+
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <img src="images/project4.gif" alt="Ratedle Demonstration" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <a href="https://stopwatch-xi-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <h3>Stopwatch</h3>
+                                </a>
+                                <a href="https://github.com/Navajoz/Stopwatch" target="_blank" rel="noopener noreferrer" class="github-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p>Cronômetro de browser, funcionalidade de marcar tempo de voltas, reset e relógio</p>
+                            <p class="project-tags">
+                                <span>HTML/CSS/JS</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2 class="section-title">Sobre</h2>
+                <div class="about-content">
+                    <p>Olá! Meu nome é Gustavo Navarro, tenho 18 anos e sou um desenvolvedor web. Atualmente, domino tecnologias como React, JavaScript, SQL e Tailwind CSS, e estou em busca da minha primeira oportunidade profissional como desenvolvedor web.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">Contato</h2>
+                <p>Disponivel para Freelance, colaborações e trabalho</p>
+                <div class="contact-links">
+                    <a href="mailto:gustavonavarromarques@gmail.com">gustavonavarromarques@gmail.com</a>
+                    <a href="www.linkedin.com/in/gustavo-navarro-marques-7a6b97363">LinkedIn</a>
+                    <a href="https://github.com/Navajoz">GitHub</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Gustavo Navarro. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
